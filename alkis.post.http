@@ -1,0 +1,79 @@
+
+### Berlin
+POST https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:GetCapabilities service="WFS"
+xmlns:wfs="http://www.opengis.net/wfs/2.0">
+</wfs:GetCapabilities>
+
+
+
+###
+
+POST https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:GetCapabilities service="WFS"
+xmlns:wfs="http://www.opengis.net/wfs/2.0">
+</wfs:GetCapabilities>
+
+### Brandenburg
+
+POST https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:DescribeFeatureType service="WFS" version="2.0.0"
+xmlns:wfs="http://www.opengis.net/wfs/2.0">
+</wfs:DescribeFeatureType>
+###
+
+
+
+POST https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:ListStoredQueries service="WFS" version="2.0.0"
+xmlns:wfs="http://www.opengis.net/wfs/2.0"></wfs:ListStoredQueries>
+
+###
+
+https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?service=WFS&version=2.0.0&request=GetFeature&TypeNames=Flurstueck&count=3
+
+###
+
+POST https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:GetFeature service="WFS" version="2.0.0" count="10"
+xmlns:wfs="http://www.opengis.net/wfs/2.0">
+<wfs:Query typeNames='Flurstueck'/>
+</wfs:GetFeature>
+
+###
+
+POST https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:GetFeature service="WFS" version="2.0.0" count="20"
+xmlns:wfs="http://www.opengis.net/wfs/2.0"
+xmlns:ave="http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0/"
+xmlns:fes="http://www.opengis.net/fes/2.0"
+>
+<wfs:Query typeNames='Flurstueck'>
+<fes:Filter xmlns:ave="http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0/">
+<fes:PropertyIsEqualTo>
+    <fes:ValueReference>ave:gemarkung</fes:ValueReference>
+    <fes:Literal>Mühlberg</fes:Literal>
+</fes:PropertyIsEqualTo>
+</fes:Filter>
+</wfs:Query>
+</wfs:GetFeature>
+
+###

@@ -1,0 +1,61 @@
+
+### Berlin GetCapabilities
+
+GET https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis?service=WFS
+&request=GetCapabilities
+
+### Berlin DescribeFeatureType
+
+GET https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis?service=WFS
+&version=2.0.0
+&request=DescribeFeatureType
+
+### Berlin GetFeature
+
+https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis?service=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMEs=fis:s_wfs_alkis
+&NAMESPACES=xmlns(fis,http://www.berlin.de/broker)
+&count=3
+&Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>fis:namgmk</fes:ValueReference><fes:Literal>Spandau</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
+
+### Berlin GetFeature
+
+https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis?Service=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMEs=fis:s_wfs_alkis
+&NAMESPACES=xmlns(fis,http://www.berlin.de/broker)
+&COUNT=3
+&FILTER=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>fis:namgmk</fes:ValueReference><fes:Literal>Treptow</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
+
+
+
+
+
+### Brandenbug GetCapabilities
+GET https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?service=WFS
+&request=GetCapabilities
+
+### Brandenbug DescribeFeatureType
+GET https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?service=WFS
+&version=2.0.0
+&request=DescribeFeatureType
+
+### Brandenburg GetFeature
+GET https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?service=WFS
+&version=2.0.0
+&request=GetFeature
+&TypeNames=Flurstueck
+&count=3
+
+### Brandenburg GET OK
+
+GET https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?Service=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:Flurstueck
+&NAMESPACES=xmlns(ave,http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0)
+&count=3
+&Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>ave:gemarkung</fes:ValueReference><fes:Literal>Mühlberg</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
