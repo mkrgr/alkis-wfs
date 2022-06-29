@@ -59,3 +59,122 @@ GET https://isk.geobasis-bb.de/ows/alkis_vereinf_wfs?Service=WFS
 &NAMESPACES=xmlns(ave,http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0)
 &count=3
 &Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>ave:gemarkung</fes:ValueReference><fes:Literal>Mühlberg</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
+
+
+### Sachsen
+https://www.geodaten.sachsen.de/alkis-wfs-4968.html
+
+
+
+### Sachsen GetCapabilities
+
+
+GET https://geodienste.sachsen.de/aaa/public_alkis/vereinf/wfs?service=WFS
+&request=GetCapabilities
+&VERSION=2.0.0
+
+
+### Sachsen DescribeFeatureType
+
+GET https://geodienste.sachsen.de/aaa/public_alkis/vereinf/wfs?service=WFS
+&version=2.0.0
+&request=DescribeFeatureType
+
+### Sachsen GetFeature
+
+GET https://geodienste.sachsen.de/aaa/public_alkis/vereinf/wfs?service=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:Flurstueck
+&count=3
+&NAMESPACES=xmlns(ave,http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0)
+&Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>ave:gemarkung</fes:ValueReference><fes:Literal>Brockwitz</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
+
+
+
+### Thüringen 
+GET http://www.geoproxy.geoportal-th.de/geoproxy/services/adv_alkis_wfs?SERVICE=WFS
+&REQUEST=GetCapabilities
+&VERSION=2.0.0
+
+
+### Thüringen DescribeFeatureType
+
+
+
+GET http://www.geoproxy.geoportal-th.de/geoproxy/services/adv_alkis_wfs?SERVICE=WFS
+&REQUEST=DescribeFeatureType
+&VERSION=2.0.0
+
+### Thüringen GetFeature
+
+GET http://www.geoproxy.geoportal-th.de/geoproxy/services/adv_alkis_wfs?SERVICE=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:Flurstueck
+&count=3
+###
+GET http://www.geoproxy.geoportal-th.de/geoproxy/services/adv_alkis_wfs?SERVICE=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:Flurstueck
+&count=3
+&NAMESPACES=xmlns(ave,http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/1.0)
+&Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>ave:gemarkung</fes:ValueReference><fes:Literal>Köfeln</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
+
+
+### Sachsen-Anhalt
+
+GET https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_ALKIS_WFS_Gemarkung_Flur_OpenData/guest?SERVICE=WFS
+&REQUEST=GetCapabilities
+&VERSION=2.0.0
+
+
+### Sachsen-Anhalt
+
+GET https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_ALKIS_WFS_Gemarkung_Flur_OpenData/guest?SERVICE=WFS
+&REQUEST=ListStoredQueries
+&VERSION=2.0.0
+
+
+
+### Sachsen-Anhalt
+GET https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_ALKIS_WFS_Gemarkung_Flur_OpenData/guest?SERVICE=WFS
+&REQUEST=DescribeFeatureType
+&VERSION=2.0.0
+
+
+### Thüringen GetFeature
+
+GET https://www.geodatenportal.sachsen-anhalt.de/wss/service/ST_LVermGeo_ALKIS_WFS_Gemarkung_Flur_OpenData/guest?SERVICE=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:KatasterBezirk
+&count=3
+###
+
+
+
+
+
+### MV
+
+
+GET https://www.geodaten-mv.de/dienste/alkis_wfs_einfach?SERVICE=WFS
+&REQUEST=GetCapabilities
+&VERSION=2.0.0
+
+### MV DescribeFeatureType
+
+GET https://www.geodaten-mv.de/dienste/alkis_wfs_einfach?SERVICE=WFS
+&REQUEST=DescribeFeatureType
+&VERSION=2.0.0
+
+###
+GET https://www.geodaten-mv.de/dienste/alkis_wfs_einfach?SERVICE=WFS
+&REQUEST=GetFeature
+&VERSION=2.0.0
+&TYPENAMES=ave:Flurstueck
+&count=3
+&NAMESPACES=xmlns(ave,http://repository.gdi-de.org/schemas/adv/produkt/alkis-vereinfacht/2.0)
+&Filter=<fes:Filter xmlns="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0"><fes:PropertyIsEqualTo><fes:ValueReference>ave:gemarkung</fes:ValueReference><fes:Literal>Brockwitz</fes:Literal></fes:PropertyIsEqualTo></fes:Filter>
